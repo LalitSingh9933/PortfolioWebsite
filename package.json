@@ -1,7 +1,6 @@
 {
   "name": "portfoliowebsite",
   "homepage": " https://LalitSingh9933.github.io/PortfolioWebsite/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
