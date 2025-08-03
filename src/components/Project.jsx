@@ -17,8 +17,8 @@ const Project = () => {
        title: "Note Taking App",
       description: "A modern note-taking application with rich text editing, cloud sync, and organizational features.",
       tags: ["React", "MongoDB", "Node.js", "Tailwind"],
-      liveUrl: "#",
-      codeUrl: "#",
+      liveUrl: "https://note-app-ho58.vercel.app/",
+      codeUrl: "https://github.com/LalitSingh9933/NoteApp.git",
       image: note
     },
    
