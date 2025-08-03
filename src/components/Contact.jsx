@@ -51,7 +51,7 @@ const Contact = () => {
         <div className="absolute bottom-1/4 -right-20 w-80 h-80 rounded-full bg-purple-500/10 filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10"> {/* Changed to z-0 */}
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -69,7 +69,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row gap-12 relative z-10"> {/* Added z-10 here */}
+        <div className="flex flex-col lg:flex-row gap-12 relative z-10">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -80,10 +80,13 @@ const Contact = () => {
           >
             <div className="space-y-8">
               {contactMethods.map((method, index) => (
-                <motion.div
+                <motion.a
                   key={index}
+                  href={method.action}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
-                  className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
+                  className="block bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow duration-300 cursor-pointer"
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-[#52a388]/10 dark:bg-[#52a388]/20 rounded-full">
@@ -91,17 +94,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">{method.title}</h3>
-                      <a 
-                        href={method.action} 
-                        className="text-gray-600 dark:text-gray-300 hover:text-[#52a388] transition-colors duration-300"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <p className="text-gray-600 dark:text-gray-300 hover:text-[#52a388] transition-colors duration-300">
                         {method.info}
-                      </a>
+                      </p>
                     </div>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
 
               {/* Social Links */}

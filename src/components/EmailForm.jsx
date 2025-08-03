@@ -116,7 +116,7 @@ export default function EmailForm() {
                         placeholder="Your name"
                         required
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${errors.user_name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
+                        className={`w-full px-4 py-3 dark:text-gray-50 bg-gray-50 dark:bg-gray-700 border ${errors.user_name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
                     />
                     {errors.user_name && (
                         <p className="mt-1 text-sm text-red-500">{errors.user_name}</p>
@@ -135,7 +135,7 @@ export default function EmailForm() {
                         placeholder="your@example.com"
                         required
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${errors.user_email ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
+                        className={`w-full px-4 py-3  dark:text-gray-50 bg-gray-50 dark:bg-gray-700 border ${errors.user_email ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
                     />
                     {errors.user_email && (
                         <p className="mt-1 text-sm text-red-500">{errors.user_email}</p>
@@ -154,7 +154,7 @@ export default function EmailForm() {
                         placeholder="Subject of your message"
                         required
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${errors.subject ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
+                        className={`w-full px-4 py-3  dark:text-gray-50 bg-gray-50 dark:bg-gray-700 border ${errors.subject ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
                     />
                     {errors.subject && (
                         <p className="mt-1 text-sm text-red-500">{errors.subject}</p>
@@ -173,7 +173,7 @@ export default function EmailForm() {
                         placeholder="Your message here..."
                         required
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
+                        className={`w-full px-4 py-3  dark:text-gray-50 bg-gray-50 dark:bg-gray-700 border ${errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} rounded-lg focus:outline-none focus:ring-2 focus:ring-[#52a388] focus:border-transparent`}
                     ></textarea>
                     {errors.message && (
                         <p className="mt-1 text-sm text-red-500">{errors.message}</p>

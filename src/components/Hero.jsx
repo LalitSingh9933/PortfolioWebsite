@@ -81,14 +81,14 @@ const Hero = () => {
                 Contact Me
                 <HiOutlineMail className="ml-2" />
               </a>
-              <a
+              {/* <a
                 href="/resume.pdf"
                 download
                 className="px-6 py-3 bg-transparent border-2 border-gray-300 hover:border-[#52a388] dark:border-gray-600 dark:hover:border-[#52a388] text-gray-800 dark:text-white rounded-lg font-medium transition-colors duration-300 flex items-center"
               >
                 Download CV
                 <FiDownload className="ml-2" />
-              </a>
+              </a> */}
             </motion.div>
 
             {/* Social links */}

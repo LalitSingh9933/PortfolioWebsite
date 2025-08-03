@@ -33,7 +33,7 @@ const Project = () => {
         <div className="absolute bottom-1/4 -right-20 w-80 h-80 rounded-full bg-purple-500/10 filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-0">
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
