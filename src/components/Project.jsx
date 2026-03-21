@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-import ecommerce from '../assets/e-commerce.jpg'
+import services from '../assets/services.png'
 import note from '../assets/note.webp'
 
 const Project = () => {
   const projects = [
     {
-      title: "E-Commerce Website",
-      description: "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.",
-      tags: ["React", "Node.js", "MongoDB"],
-      liveUrl: "#",
-      codeUrl: "#",
-      image: ecommerce
+      title: "we care community",
+      description: "A disability support platform offering personalized NDIS services, including in-home care, accommodation, and community participation to help individuals live independently and thrive.",
+      tags: ["React", "Tailwind" ,"zod validation" ],
+      liveUrl: "https://www.wecarecommunity.com.au/",
+      codeUrl: "https://github.com/LalitSingh9933/WeCarecommunity/tree/main/WeCareCommunity",
+      image: services
     },
     {
        title: "Note Taking App",
