@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiTwitter, FiDownload } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
-import Profile from '../assets/profile2.png';
+import Profile from '../assets/profile.png';
 
 const Hero = () => {
   const socialLinks = [
